@@ -1,6 +1,7 @@
 {
   "name": "carrent",
   "version": "0.1.0",
+  "homepage": "https://YuliaMoore.github.io/carrental",
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.11.0",
