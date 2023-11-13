@@ -28,9 +28,9 @@ const FilteredForm = ({ makes, prices, onFilterChange, onResetClick }) => {
     priceRangeOptions.push({ value: i, label: `${i}` });
   }
 
-  const handlePriceStepChange = (selectOption) => {
-    setSelectedPriceStep(selectOption.value);
-    setSelectedPriceLabel(selectOption.label);
+  const handlePriceStepChange = (selectedOption) => {
+    setSelectedPriceStep(selectedOption.value);
+    setSelectedPriceLabel(selectedOption.label);
   };
 
   const filteredPrices = prices.filter((price) => price <= selectedPriceStep);
@@ -54,7 +54,7 @@ const FilteredForm = ({ makes, prices, onFilterChange, onResetClick }) => {
       parseInt(minValue.replace(/,/g, ""), 10) >
       parseInt(maxValue.replace(/,/g, ""), 10)
     ) {
-      toast.error("Minimum mileage can not be greater than maximum mileage");
+      toast.error("Minimum mileage cannot be greater than maximum mileage");
       return;
     }
 
@@ -67,8 +67,10 @@ const FilteredForm = ({ makes, prices, onFilterChange, onResetClick }) => {
       minMileage: parseInt(minValue.replace(/,/g, ""), 10),
       maxMileage: parseInt(maxValue.replace(/,/g, ""), 10),
     };
+
     onFilterChange(newFilters);
   };
+
   const handleResetClick = () => {
     setSelectedMake("");
     setSelectedPriceStep(null);

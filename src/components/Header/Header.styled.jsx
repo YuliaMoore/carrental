@@ -11,13 +11,13 @@ export const NavContainer = styled.header`
   color: #fff;
   background: -webkit-linear-gradient(
     0deg,
-    rgb(66, 159, 174),
+    rgb(196, 227, 232),
     rgb(9, 27, 129) 100%
   );
   background: -moz-linear-gradient(
     0deg,
     rgb(66, 159, 174),
-    rgb(9, 27, 129) 100%
+    rgb(2, 18, 109) 100%
   );
   background: linear-gradient(0deg, rgb(66, 159, 174), rgb(9, 27, 129) 100%);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),

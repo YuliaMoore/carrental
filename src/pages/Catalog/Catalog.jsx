@@ -100,9 +100,7 @@ const Catalog = () => {
             <AdvertList filteredAdverts={filteredAdverts} />
           ) : (
             <>
-              <ResultMessage>
-                No results found for the selected criteria.
-              </ResultMessage>
+              <ResultMessage>No matches found.</ResultMessage>
             </>
           )
         ) : (
